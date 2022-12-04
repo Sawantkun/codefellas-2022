@@ -1,0 +1,82 @@
+/* navbar styling */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    padding: 0px 100px;
+    position: fixed;
+    width: 100%;
+    z-index: 20;
+    transition: 0.5s;
+    backdrop-filter: blur(20px);
+  }
+  nav span{
+    margin-right: auto;
+    width: 100%;
+    font-weight: 600;
+    margin-left: 10px;
+    font-size: 1.5rem;
+    transition: 0.5s;
+}
+nav font{
+  backdrop-filter: blur(20px);
+  transition: 0.5s;
+}
+nav font:hover {
+    cursor: pointer;
+    color: blue;
+}
+ nav ul{
+    display: flex;
+    list-style:none;
+  }
+ nav ul li{
+    padding:5px 5px 0px 5px;
+    text-align:center;
+    position:relative;
+    margin-left:50px
+  }
+ nav ul a{
+    text-decoration:none;
+    color:var(--primary-color);
+  }
+ nav ul a:hover{
+    color:blue;
+    transition:0.5s;
+  }
+ nav ul li:before{
+    position:absolute;
+    content:'';
+    width:15px;
+    height:15px;
+    left:10px;
+    top:10px;
+    border-top:2px solid blue;
+    border-left:2px solid blue;
+    opacity:0;
+    transition:0.5s;
+  }
+ nav ul li:hover:before{
+    opacity:1;
+    left:-10px;
+    top:0px;
+  }
+  
+ nav ul li:after{
+    position:absolute;
+    content:'';
+    width:15px;
+    height:15px;
+    right:10px;
+    bottom:10px;
+    border-bottom:2px solid blue;
+    border-right:2px solid blue;
+    opacity:0;
+    transition:0.5s;
+  }
+ nav ul li:hover:after{
+    opacity:1;
+    right:-10px;
+    bottom:-5px;
+  }

@@ -1,0 +1,100 @@
+#team{
+    display: flex;
+	flex-direction: column;
+    height: 140vh;
+    width: 100%;
+    padding: 50px;
+    align-items: center;
+    justify-content: center;
+	
+}
+#team h2{
+	font-size: 3rem;
+	font-weight: 600;
+}
+.cards{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+h3 {
+	margin: 10px 0;
+}
+
+h6 {
+	margin: 5px 0;
+	font-size: 0.7rem;
+	opacity: 0.6;
+	text-transform: uppercase;
+}
+
+p {
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.card-container,.card-container2,.card-container3,.card-container4 {
+	background-color: rgba(0, 0, 255, 0.7);
+	border-radius: 5px;
+	box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
+	color: white;
+	padding: 30px 0px;
+	position: relative;
+	width: 230px;
+    margin: 50px 30px;
+	text-align: center;
+	cursor: pointer;
+}
+.socials img{
+	width: 20px;
+	transition: 0.3s;
+}
+.socials img:hover{
+	transform: rotate(10deg);
+}
+.card-container .socials,.card-container2 .socials,.card-container3 .socials,.card-container4 .socials {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	position: absolute;
+	background-color: rgb(52, 52, 255);
+	height: 50px;
+	display: none;
+	border-bottom-right-radius:10px ;
+	border-bottom-left-radius:10px ;
+	transition:0.5s;
+}
+.card-container:hover .socials,.card-container2:hover .socials,.card-container3:hover .socials,.card-container4:hover .socials{
+	display: flex;
+	transform: translateY(-20px);
+}
+.card-container:hover .round,.card-container2:hover .round,.card-container3:hover .round,.card-container4:hover .round{
+	transform: rotate(10deg);
+}
+
+.card-container .round,.card-container2 .round,.card-container3 .round,.card-container4 .round {
+	border: 1px solid white;
+	border-radius: 50%;
+	padding: 7px;
+    width: 150px;
+    margin-bottom: 20px;
+	transition: 0.5s;
+}
+
+button.primary {
+	background-color: white;
+	border: 1px solid white;
+	border-radius: 3px;
+	color: blue;
+    font-weight: bold;
+    margin-right: 10px;
+	padding: 7px 10px;
+}
+
+button.primary.ghost {
+	background-color: transparent;
+	color: white;
+    font-weight: 500;
+}
