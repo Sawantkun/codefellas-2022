@@ -1,4 +1,4 @@
-#footer{
+#contact{
     height: 50vh;
     width: 100vw;
     background: url(../Media/Images/header-bg.jpg);
@@ -9,13 +9,13 @@
     color: white;
     font-family: 'Noto Sans', sans-serif;
 }
-#footer img{
+#contact img{
     width: 20px;
     margin-right: 10px;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
 }
-#footer img:hover{
+#contact img:hover{
     transform: translateY(-3px);
 }
 .footer-top{
@@ -62,7 +62,7 @@
 .footer-bottom p{
     z-index: 2;
 }
-#footer::after{
+#contact::after{
     content: '';
     position: absolute;
     bottom: 0;

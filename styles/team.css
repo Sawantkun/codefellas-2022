@@ -1,12 +1,32 @@
 #team{
     display: flex;
 	flex-direction: column;
-    height: 140vh;
+    height: 100vh;
     width: 100%;
     padding: 50px;
+	margin-bottom: 100px;
     align-items: center;
     justify-content: center;
-	
+	position: relative;
+}
+.code4,.code5,.code6{
+    position: absolute;
+    width: 60px !important;
+    animation-name:bounce ;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+.code4{
+    right: 500px;
+    bottom: 30px;
+}
+.code5{
+    top: 70px;
+    left: 200px;
+}
+.code6{
+    right: 300px;
+    top: 100px;
 }
 #team h2{
 	font-size: 3rem;

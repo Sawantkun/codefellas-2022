@@ -22,8 +22,6 @@ var modal = document.getElementById("myModal");
 var btn = document.getElementById("myBtn");
 var btn2 = document.querySelector(".gotit");
 var span = document.getElementsByClassName("close")[0];
-
-
 function disableScrolling(){
   var x=window.scrollX;
   var y=window.scrollY;
