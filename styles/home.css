@@ -88,3 +88,28 @@
     top: 120px;
     right:400px;
 }
+
+@media only screen and (max-width: 830px) {
+    #home{
+        padding-top: 0;
+        height: 100vh;
+    }
+    #home p{
+        line-height: 30px;
+        font-size: 1.3rem;
+    }
+    br{
+        display: none;
+    }
+    #home img:first-of-type{
+        top: 450px;
+        right: 50px;
+    }
+    #home img:last-of-type{
+        left: 100px;
+        bottom: 350px;
+    }
+    #home img:nth-of-type(2){
+        top: 200px;
+    }
+}
