@@ -65,6 +65,7 @@
     }
     .modal-content{
       width: 350px;
+      z-index: 100;
     }
 
   }
