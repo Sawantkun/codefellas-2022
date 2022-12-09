@@ -130,3 +130,13 @@ button.primary.ghost {
 		top: 150px;
 	}
 }
+
+@media only screen and (max-width: 600px) {
+    #team{
+		padding: 0;
+		height: 200vh;
+	}
+	#team .drag{
+		display: none;
+	  }
+}

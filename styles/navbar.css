@@ -27,25 +27,25 @@ nav font:hover {
     cursor: pointer;
     color: blue;
 }
- nav ul{
+ .list{
     display: flex;
     list-style:none;
   }
- nav ul li{
+ .list li{
     padding:5px 5px 0px 5px;
     text-align:center;
     position:relative;
     margin-left:50px
   }
- nav ul a{
+ .list a{
     text-decoration:none;
     color:var(--primary-color);
   }
- nav ul a:hover{
+ .list a:hover{
     color:blue;
     transition:0.5s;
   }
- nav ul li:before{
+ .list li:before{
     position:absolute;
     content:'';
     width:15px;
@@ -57,13 +57,13 @@ nav font:hover {
     opacity:0;
     transition:0.5s;
   }
- nav ul li:hover:before{
+ .list li:hover:before{
     opacity:1;
     left:-10px;
     top:0px;
   }
   
- nav ul li:after{
+ .list li:after{
     position:absolute;
     content:'';
     width:15px;
@@ -75,8 +75,51 @@ nav font:hover {
     opacity:0;
     transition:0.5s;
   }
- nav ul li:hover:after{
+ .list li:hover:after{
     opacity:1;
     right:-10px;
     bottom:-5px;
   }
+.hamburger{
+  display: none;
+  height: 30px;
+  cursor: pointer;
+  fill: white;
+}
+.open{
+  display: flex !important;
+}
+
+@media only screen and (max-width: 830px) {
+  .hamburger{
+    display: block;
+  }
+  .list {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 0;
+    padding: 70px 80px 0 20px;
+    top: 0px;
+    z-index: -1;
+    background-color: var(--secondary-color);
+  }
+  .list li{
+    padding: 10px 0;
+  }
+  nav{
+    top: 0 !important;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  nav{
+    padding: 0 30px;
+  }
+  .list{
+    padding: 70px 40px 20px 0;
+  }
+}

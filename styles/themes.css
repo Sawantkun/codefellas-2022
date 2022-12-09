@@ -147,3 +147,20 @@
     background-color: blue;
   }
 }
+
+@media only screen and (max-width: 600px) {
+	#themes{
+    justify-content: flex-start;
+		padding: 0;
+    height: 300vh;
+	}
+  .container{
+    padding: 0;
+  }
+  .timeline ul{
+    transform: translateX(-15px);
+  }
+  .timeline ul li{
+    margin-top: 50px;
+  }
+}

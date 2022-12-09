@@ -81,3 +81,38 @@
         height: 30vh;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    #contact{
+        padding: 0;
+        height: 60vh;
+    }
+    .footer-top-content{
+        flex-direction: column;
+        height: 100%;
+    }
+    .footer-top{
+        padding: 0 50px;
+        height: 70%;
+    }
+    .footer-bottom{
+        height: 20px;
+    }
+    .footer-top-left,.footer-top-right{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer-top h2{
+        font-size: 1.5rem;
+    }
+    .footer-top .line{
+        position: absolute;
+        bottom: -32%;
+        width: 77%;
+        height: 2px;
+        opacity: 0.4;
+        background-color: white;
+    }
+}

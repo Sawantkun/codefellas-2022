@@ -1,8 +1,3 @@
-// dark theme
-const theme=document.querySelector('#theme');
-theme.addEventListener('click',()=>{
-  document.body.classList.toggle('theme');
-})
 
 // navbar scroll dissappear
 var prevScrollpos = window.pageYOffset;
@@ -38,23 +33,44 @@ function enableScrolling(){
     }
     prevScrollpos = currentScrollPos;
   };}
-
-btn.onclick = function() {
-  disableScrolling();
-  document.querySelector("nav").style.top = "-80px";
-  modal.style.display = "block";
-}
-btn2.onclick = function() {
-  modal.style.display = "none";
-  enableScrolling();
-}
-span.onclick = function() {
-  modal.style.display = "none";
-  enableScrolling();
-}
-window.onclick = function(event) {
-  if (event.target == modal) {
+  
+  btn.onclick = function() {
+    disableScrolling();
+    document.querySelector("nav").style.top = "-80px";
+    modal.style.display = "block";
+  }
+  btn2.onclick = function() {
     modal.style.display = "none";
     enableScrolling();
   }
-}
+  span.onclick = function() {
+    modal.style.display = "none";
+    enableScrolling();
+  }
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+      enableScrolling();
+    }
+  }
+  
+  
+  
+  // hamburger menu 
+  const ham = document.querySelector(".hamburger");
+const nav = document.querySelector(".list");
+ham.addEventListener("click", ()=>{
+  nav.classList.toggle('open');
+})
+
+
+// dark theme
+const theme=document.querySelector('#theme');
+theme.addEventListener('click',()=>{
+  document.body.classList.toggle('theme');
+  if(theme.classList.contains('theme')){
+    ham.src="./media/svg/hamburger-menu-svgrepo-com.svg";
+  }else{
+    ham.src="./media/svg/hamdark.svg";
+  }
+})
