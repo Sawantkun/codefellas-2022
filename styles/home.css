@@ -140,7 +140,7 @@
     }
     #home img:last-of-type{
         left: 50px;
-        bottom: 80px;
+        bottom: 60px;
     }
     #home img:nth-of-type(2){
         top: 80px;
