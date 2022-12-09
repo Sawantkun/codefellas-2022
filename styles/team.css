@@ -1,7 +1,7 @@
 #team{
     display: flex;
 	flex-direction: column;
-    height: 100vh;
+    height: 200vh;
     width: 100%;
     padding: 50px;
 	margin-bottom: 100px;
@@ -17,16 +17,16 @@
     animation-duration: 2s;
 }
 .code4{
-    right: 500px;
-    bottom: 30px;
+    right: 300px;
+    bottom: 400px;
 }
 .code5{
-    top: 70px;
+    top: 150px;
     left: 200px;
 }
 .code6{
-    right: 300px;
-    top: 100px;
+    right: 200px;
+    top: 400px;
 }
 #team h2{
 	font-size: 3rem;
@@ -123,20 +123,27 @@ button.primary.ghost {
 @media only screen and (max-width: 830px) {
 	.code4{
 		right: 500px;
-		bottom: 100px;
+		bottom: 20px;
+	}
+	.code5{
+		top: 1100px;
+		left: 100px;
 	}
 	.code6{
-		right: 150px;
-		top: 150px;
+		right: 50px;
+		top: 130px;
 	}
 }
 
 @media only screen and (max-width: 600px) {
     #team{
 		padding: 0;
-		height: 200vh;
+		height: 500vh;
 	}
 	#team .drag{
 		display: none;
+	  }
+	  #team h2{
+		line-height: 60px;
 	  }
 }
