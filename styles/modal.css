@@ -58,3 +58,13 @@
     padding-top: 20px;
     font-size:0.9rem;
   }
+
+  @media only screen and (max-width: 600px) {
+    .rules, .judgement{
+      max-width: 300px;
+    }
+    .modal-content{
+      width: 350px;
+    }
+
+  }
