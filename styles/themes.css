@@ -154,6 +154,7 @@
 	}
   .container{
     padding: 0;
+    transform: translateX(-15px);
   }
   .timeline ul li{
     margin-top: 50px;
