@@ -19,7 +19,7 @@
 }
 .code4{
     right: 300px;
-    bottom: 400px;
+    bottom: 500px;
 }
 .code5{
     top: 150px;
@@ -55,7 +55,7 @@ p {
 	line-height: 21px;
 }
 
-.card-container,.card-container2,.card-container3,.card-container4 {
+.card-container,.card-container2,.card-container3,.card-container9,.card-container4,.card-container5,.card-container6,.card-container7,.card-container8 {
 	background-color: rgba(0, 0, 255, 0.7);
 	border-radius: 5px;
 	box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
@@ -74,7 +74,7 @@ p {
 .socials img:hover{
 	transform: rotate(10deg);
 }
-.card-container .socials,.card-container2 .socials,.card-container3 .socials,.card-container4 .socials {
+.card-container .socials,.card-container2 .socials,.card-container5 .socials,.card-container6 .socials,.card-container7 .socials,.card-container8 .socials,.card-container9 .socials,.card-container3 .socials,.card-container4 .socials {
 	width: 100%;
 	display: flex;
 	align-items: center;
@@ -87,15 +87,15 @@ p {
 	border-bottom-left-radius:10px ;
 	transition:0.5s;
 }
-.card-container:hover .socials,.card-container2:hover .socials,.card-container3:hover .socials,.card-container4:hover .socials{
+.card-container:hover .socials,.card-container2:hover .socials,.card-container5:hover .socials,.card-container6:hover .socials,.card-container7:hover .socials,.card-container3:hover .socials,.card-container8:hover .socials,.card-container9:hover .socials ,.card-container3:hover .socials,.card-container4:hover .socials{
 	display: flex;
 	transform: translateY(-20px);
 }
-.card-container:hover .round,.card-container2:hover .round,.card-container3:hover .round,.card-container4:hover .round{
+.card-container:hover .round,.card-container2:hover .round,.card-container5:hover .round,.card-container6:hover .round,.card-container7:hover .round,.card-container8:hover .round,.card-container9:hover .round,.card-container3:hover .round,.card-container4:hover .round{
 	transform: rotate(10deg);
 }
 
-.card-container .round,.card-container2 .round,.card-container3 .round,.card-container4 .round {
+.card-container .round,.card-container5 .round,.card-container6 .round,.card-container7 .round,.card-container8 .round,.card-container9 .round,.card-container2 .round,.card-container3 .round,.card-container4 .round {
 	border: 1px solid white;
 	border-radius: 50%;
 	padding: 7px;
