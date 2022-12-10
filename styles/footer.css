@@ -85,7 +85,7 @@
 @media only screen and (max-width: 600px) {
     #contact{
         padding: 0;
-        height: 70vh;
+        height: 50vh;
     }
     .footer-top-content{
         flex-direction: column;
